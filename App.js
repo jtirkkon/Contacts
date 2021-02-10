@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { StyleSheet, View, Button, FlatList, Text } from 'react-native';
 import * as Contacts from 'expo-contacts';
 
@@ -14,7 +14,7 @@ export default function App () {
         });
         
         if (data.length > 0) {
-          console.log(data);
+          //console.log(data);
           setContacts(data);
         }
       }
